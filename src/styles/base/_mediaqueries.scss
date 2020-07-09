@@ -1,0 +1,30 @@
+@media (max-width: 900px) {
+    .container {
+        width: 85%;
+        max-width: 50rem;
+        margin: 10px auto;
+        padding: $xs-pm;
+
+        &--accordion {
+            width: 90%;
+            max-width: 50rem;
+            padding: 0 $xs-pm;
+        }
+    }
+
+    .accordion {
+        &__info {
+            padding: 0;
+        }
+
+        &__button {
+            padding: 0;
+        }
+        &__info-text {
+            font-size: $xs-fs;
+        }
+        &__text {
+            font-size: $xs-fs;
+        }
+    }
+}

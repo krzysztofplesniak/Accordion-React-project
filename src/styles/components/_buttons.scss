@@ -1,0 +1,43 @@
+// BEM & SASS styles definition of <button className='button'>
+
+// B = base 'button'
+.button {
+	cursor: pointer;
+	border: none;
+	width: 100%;
+	padding: $m-pm;
+	color: $white;
+	font-weight: $m-fw;
+	margin-bottom: $xl-pm;
+
+	&:focus {
+		outline: 0;
+	}
+
+	// E = element 'button__small'
+	&__small {
+		padding: $s-pm;
+		font-weight: $s-fw;
+		margin-bottom: $s-pm;
+	}
+
+	// E = element 'button__large'
+	&__large {
+		padding: $l-pm;
+		font-weight: $l-fw;
+		margin-bottom: $l-pm;
+	}
+
+	// M = modifier 'button--link'
+	&--link {
+		background-color: none;
+		color: $off-white;
+		opacity: 0.8;
+		padding: 0;
+	}
+
+	// M = modifier 'button--danger'
+	&--danger {
+		color: $red;
+	}
+}

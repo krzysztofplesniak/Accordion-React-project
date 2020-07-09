@@ -1,0 +1,23 @@
+.container {
+    box-sizing: border-box;
+    background-color: $off-white;
+    width: 70%;
+    max-width: 70rem;
+    margin: 20px auto;
+    padding: $m-pm;
+
+    &--accordion {
+        width: 80%;
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 0 $xs-pm;
+    }
+}
+
+.beatLoader {
+    border: 0px solid red;
+    display: flex;
+    height: 80vh;
+    justify-content: center; 
+    align-items: center;
+}

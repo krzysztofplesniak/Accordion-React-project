@@ -1,0 +1,21 @@
+
+*, 
+*::after, *::before { 
+    // imported separeted definition of resets in file normalize.css by npm  
+	margin: 0;
+    padding: 0;  
+    box-sizing: border-box;
+}  
+
+html {
+	font-size: 62.5%; // everything is defined by const 10px =  62.5% * 16px (base font-size)  
+}
+
+body {
+    height: 100vh;
+    font-family: $font-stack;
+    font-size: $m-fs;
+    line-height: 1.6;
+    color: $dark-grey;
+}
+

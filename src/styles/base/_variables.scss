@@ -1,0 +1,45 @@
+// Base colors
+$background-color: #f4f4f4;
+$background-color2: rgb(7, 7, 7);
+$white: #fff;
+$off-white: #ddd;
+$black: #202020;
+$off-black: #2f2f2fd3;
+$grey: #666;
+$off-grey: #ccc;
+$dark-grey: rgb(100, 100, 100);
+$red: #f30d0d;
+$blue: #1d2fce;
+$dark-blue: #364051;
+$green: #23ce39;
+
+// Theme dark/liht mode
+$ligth-theme: $background-color;
+$dark-theme: $background-color2;
+
+// Fonts stack
+$font-stack: 'Helvetica', 'Roboto', 'Arial', sans-serif;
+
+// Padding & Margin 
+$xs-pm: 1rem;
+$s-pm: 1.5rem;
+$m-pm: 2rem;
+$l-pm: 3rem;
+$xl-pm: 4rem;
+
+// Font size 
+$xs-fs: 1.2rem;
+$s-fs: 1.4rem;
+$m-fs: 1.8rem;
+$l-fs: 2.4rem;
+$xl-fs: 3rem;
+
+
+// Fonts weight
+$xs-fw: 100;
+$s-fw: 200;
+$m-fw: 500;
+$l-fw: 900;
+
+// Breakpoints
+$desktop-breakpoint: 45rem;

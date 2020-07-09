@@ -1,0 +1,64 @@
+{
+    "accordions": [
+        {
+            "title": "Dziecko na zjeżdżalni....",
+            "subtitle": "Moje dziecko chciałoby skorzystać ze zjeżdżalni w Aquaparku. Czy obowiązują tam specjalne wymagania?",
+            "content": "Aby skorzystać ze zjeżdżalni Blach Hole i Magic Eye wymagany wzrost 135 cm. Aby skorzystać ze zjeżdżalni Turbo, Skoczni Małysza czy Multimedialnej należy mieć min 150 cm wzrostu. Niższe dzieci zapraszamy do skorzystania ze zjeżdżalni rodzinnej oraz zjeżdżalni dziecięcej w brodziku."
+        },
+        {
+            "title": "Szorty",
+            "subtitle": "Czy do Aquaparku mogę wejść w luźnych szortach?",
+            "content": "Oczywiście, jeśli szorty są ze specjalnego materiału przeznaczonego do kąpieli, nie ma żadnych przeciwwskazań."
+        },
+        {
+            "title": "Bezpłatne wejście",
+            "subtitle": "Do jakiego wieku dzieci korzystają z Aquaparku bezpłatnie?",
+            "content": "Dzieci do 3. roku życia korzystają z Aquaparku bezpłatnie."
+        },
+        {
+            "title": "Wózek z dzieckiem",
+            "subtitle": "Mam małe dziecko, przyjadę do Państwa z wózkiem, czy mogę wjechać wózkiem na strefę basenów?",
+            "content": "Odradzamy wnoszenie wózków i nosideł na teren Aquaparku. W obiekcie panują specyficzne warunki – jest gorąco i wilgotno, co negatywnie wpływa na stan techniczny sprzętu."
+        },
+        {
+            "title": "Czepek & klapki",
+            "subtitle": "Czy muszę mieć ze sobą klapki, czepek?",
+            "content": "Nie wymagamy czepków. Klapki należy mieć zarówno ze względów bezpieczeństwa, jak i higieny."
+        },
+        {
+            "title": "Ręcznik",
+            "subtitle": "Czy mogę wypożyczyć u Was ręcznik?",
+            "content": "Nie posiadamy wypożyczalni ręczników."
+        },
+        {
+            "title": "Bilet całodniowy",
+            "subtitle": "Czy w przypadku zakupienia biletu całodniowego mogę wyjść w środku dnia i wrócić wieczorem?",
+            "content": "Nie, bilet całodniowy obejmuje wyłącznie jedno wejście na cały dzień. Opuszczając strefę klient jest zobowiązany do oddania transpondera, a więc nie ma możliwości ponownego wejścia w ramach tego samego biletu."
+        },
+        {
+            "title": "Dziecko na zjeżdżalni....",
+            "subtitle": "Moje dziecko chciałoby skorzystać ze zjeżdżalni w Aquaparku. Czy obowiązują tam specjalne wymagania?",
+            "content": "Aby skorzystać ze zjeżdżalni Blach Hole i Magic Eye wymagany wzrost 135 cm. Aby skorzystać ze zjeżdżalni Turbo, Skoczni Małysza czy Multimedialnej należy mieć min 150 cm wzrostu. Niższe dzieci zapraszamy do skorzystania ze zjeżdżalni rodzinnej oraz zjeżdżalni dziecięcej w brodziku."
+        },
+        {
+            "title": "Wózek z dzieckiem",
+            "subtitle": "Mam małe dziecko, przyjadę do Państwa z wózkiem, czy mogę wjechać wózkiem na strefę basenów?",
+            "content": "Odradzamy wnoszenie wózków i nosideł na teren Aquaparku. W obiekcie panują specyficzne warunki – jest gorąco i wilgotno, co negatywnie wpływa na stan techniczny sprzętu."
+        },
+        {
+            "title": "Czepek & klapki",
+            "subtitle": "Czy muszę mieć ze sobą klapki, czepek?",
+            "content": "Nie wymagamy czepków. Klapki należy mieć zarówno ze względów bezpieczeństwa, jak i higieny."
+        },
+        {
+            "title": "Ręcznik",
+            "subtitle": "Czy mogę wypożyczyć u Was ręcznik?",
+            "content": "Nie posiadamy wypożyczalni ręczników."
+        },
+        {
+            "title": "Bilet całodniowy",
+            "subtitle": "Czy w przypadku zakupienia biletu całodniowego mogę wyjść w środku dnia i wrócić wieczorem?",
+            "content": "Nie, bilet całodniowy obejmuje wyłącznie jedno wejście na cały dzień. Opuszczając strefę klient jest zobowiązany do oddania transpondera, a więc nie ma możliwości ponownego wejścia w ramach tego samego biletu."
+        }
+    ]
+}

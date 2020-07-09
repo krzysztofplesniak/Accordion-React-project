@@ -1,0 +1,98 @@
+// BEM & SASS styles definition of React componnt <Accordion className='accordion'>
+
+// B = base 'accordion'
+.accordion {
+	color: $off-white;
+
+	// E = element 'accordion__button'
+	&__button {
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 5px 0;
+		padding: $xs-pm;
+		width: 100%;
+		border-radius: 5px;
+		border: none;
+		outline: none;
+		transition: background-color 0.2s ease-in-out;
+
+		&:hover {
+			background-color: darken($off-white, 5%);
+		}
+	}
+
+	// E = element 'accordion__text'
+	&__info {
+		font-size: $s-fs;
+		color: $dark-grey;
+	    padding: $xs-pm;
+	}
+
+    &__info-text {
+        color: $off-black;
+        font-weight: $m-fw;
+		font-size: $m-fs;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+	// E = element 'accordion__title'
+	&--title {
+		font-weight: $l-fw;
+		font-size: $m-fs;
+		text-transform: uppercase;
+	    margin-bottom: 10px;
+	}
+
+	// E = element 'accordion__subtitle'
+	&--subtitle {
+        color: $black;
+        font-size: $s-fs;
+	}
+
+	// E = element 'accordion__icon'
+	&__icon {
+		padding: $m-pm;
+		transition: 0.15s ease-in-out;
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+
+	// E = element 'accordion__text'
+	&__text {
+		font-size: $s-fs;
+		color: $dark-grey;
+		margin: 0 auto;
+		padding: $xs-pm;
+	}
+
+	// E = element 'accordion__text'
+	&__content {
+		width: 100%;
+		margin: 0 auto;
+		border-left: 4px solid red;
+		background-color: $white;
+		border-radius: 5px;
+		overflow: hidden;
+		transition: max-height 0.15s ease-in-out;
+	}
+
+	&--open {
+		max-height: 100%;
+	}
+
+	// M = modifier 'accordion--dark-theme'
+	&--dark-theme {
+		background-color: $dark-theme;
+		color: $off-white;
+	}
+
+	// M = modifier 'accordion--light-theme'
+	&--light-theme {
+		background-color: $ligth-theme;
+		color: $black;
+	}
+}
