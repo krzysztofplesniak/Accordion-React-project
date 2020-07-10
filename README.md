@@ -1,11 +1,14 @@
 # 1. Webpack: 
    - Babel konfiguracja,
-   - SCSS kompilacja do CSS, css-loader, sass-loader,style-loader, postcss-loader, node-sass,
-   - minifikacja pliku bundle.js,
-   - mini-css-extract-plugin", autoprefixer, nanocss, html-webpack-plugin,
+   - SCSS kompilacja do CSS,
+   - pakiety: css-loader, sass-loader,style-loader, postcss-loader, node-sass,
+   - minifikacja pliku style.css: mini-css-extract-plugin, autoprefixer, nanocss, html-webpack-plugin,
    - mapy SASS w celu debugowania kodu,
+   - minifikacja pliku Bundle.js,
    - mode develompent/production,     
-   - concurrently dla backendu i dla front "npm run dev"  => concurrently #1npm run dev-server #2json-server
+   - concurrently dla backendu i dla front:
+      - komenda "npm run dev",  
+      - złączenie "concurrently run dev-server json-server",
    
 # 2. BEM 
   - 2 komponenty <Header> i <Accordion> oraz klasa container   
