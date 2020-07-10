@@ -23,9 +23,9 @@
    - pojawienie się bloku accordion__content =>  transistion: max-height 0.2s easy-in-out, 
    - animacja po najechaniu na strzałkę chevron => transform: rotate(90deg),
    
-# 5. Backend fake'owego JSON-server npm package
-   - JSON-server package jako backend w pliku db.json 
-   - useEffect asynchroniczny na axios 
+# 5. Backend fake'owy JSON-server
+   - jako backend JSON-server zdefiniowany w pliku db.json (npm package),  
+   - useEffect() hook asynchroniczny na axios 
    
 # 6. Responsywność
    - mediaqueries.scss osobny plik z media-queries dla ekranu poniżej 900px,
