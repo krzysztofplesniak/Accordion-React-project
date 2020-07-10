@@ -28,8 +28,8 @@
    - useEffect asynchroniczny na axios 
    
 # 6. Responsywność
-   - mediaqueries.scss osbny plik,
-   - container => szerokość mniejsza dla ekranu poniżej 900px,
+   - mediaqueries.scss osobny plik z media-queries dla ekranu poniżej 900px,
+   - container => szerokość mniejsza,
    - accordion__button => bez paddingów i mniejszy, 
    - accordion__text-info i accordion__ title => czcionki mniejsza, 
    
