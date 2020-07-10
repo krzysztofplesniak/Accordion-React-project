@@ -9,9 +9,9 @@
 # 2. BEM 
   - 2 komponenty Header i Accordion oraz  klasa container   
   - struktura 
-    BLOCK => accordion,
-    ELEMENTS => accordion__content, accordion__button, accordion__info, accordion__info-text, accordion__title, accordion__icon, 
-    MODIFIER => accordion--title, accordion--subtitle, accordion--open, accordion--dark-theme, accordion--light-theme 
+    - BLOCK => accordion,
+    - ELEMENTS => accordion__content, accordion__button, accordion__info, accordion__info-text, accordion__title, accordion__icon, 
+    - MODIFIER => accordion--title, accordion--subtitle, accordion--open, accordion--dark-theme, accordion--light-theme 
     
 # 3. SASS podział na pliki    
    - style.scss  =>  główny plik, kaskadowe importy plików .scss 
