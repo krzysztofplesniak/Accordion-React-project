@@ -11,7 +11,7 @@
       - złączenie "concurrently run dev-server json-server",
    
 # 2. BEM 
-  - 2 komponenty <Header> i <Accordion> oraz klasa container   
+  - 2 komponenty 'Header' i 'Accordion' oraz klasa 'container'
   - struktura: 
     - BLOCK => accordion,
     - ELEMENTS => accordion__content, accordion__button, accordion__info, accordion__info-text, accordion__title, accordion__icon, 
