@@ -18,7 +18,7 @@
         }
 
         &__button {
-            padding: 0;
+            padding: 10px 0px;
         }
         &__info-text {
             font-size: $xs-fs;
@@ -26,5 +26,25 @@
         &__text {
             font-size: $xs-fs;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        max-width: 100vh;
+        margin: 0px auto;
+        padding: $xs-pm;
+
+        &--accordion {
+            width: 95%;
+            padding: 0 5px;
+        }
+    }
+
+    .header {
+        margin: $xs-pm; 
+        padding: $xs-pm;
+        height: 18vh;
     }
 }

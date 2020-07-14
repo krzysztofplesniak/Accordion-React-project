@@ -7,7 +7,7 @@
 	"author": "krzysztof pleśniak",
 	"license": "ISC",
 	"scripts": {
-		"start" : "concurrently \"node server.js\" \"npm run json-server\"",
+		"start": "concurrently \"node server.js\" \"npm run json-server\"",
 		"build": "react-scripts build",
 		"json-server": "json-server --watch db.json",
 		"build-dev": "webpack --mode=development",
