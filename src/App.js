@@ -9,24 +9,18 @@ const App = () => {
 	const [accordions, setAccordions] = useState([]);
 	const [theme, setTheme] = useState('lightTheme');
 	const [loading, setLoading] = useState(true);
+
+	// const port = process.env.PORT || 5000;
+	// const env = process.env.NODE_ENV;
 	
-	const port = process.env.PORT || 5000;
-	const env = process.env.NODE_ENV;
-
-	let urlPath = '';
-
-	if (env === 'development') {
-		urlPath = 'http://localhost:3000';
-	}
-
 	const fetchData = async () => {
 		const accordionsList = await axios({
 			method: 'GET',
-			url: `${urlPath}/accordions`,
+			url: 'http://localhost:3000/accordions',
 		});
 
-		const json = await accordionsList;
-		setAccordions(json.data);
+		const json = await accordionsList.data;
+		setAccordions(json);
 		setLoading(false);
 	};
 
@@ -41,17 +35,18 @@ const App = () => {
 	return (
 		<div className='container'>
 			<Header theme={theme} onHandlerTheme={onHandlerTheme} />
-				{loading && accordions.length > 0 ? (
-					<div className='beatLoader'>
-						<BeatLoader size={50} color='red' loading />
-					</div>
-				) : (
-					<div className='accordions'>
-						{accordions.map(accordion => {
-							return <Accordion key={uuid()} accordion={accordion} />;
-						})}
-					</div>
-				)}
+
+			{loading && accordions.length === 0 ? (
+				<div className='beatLoader'>
+					<BeatLoader size={50} color='red' loading />
+				</div>
+			) : (
+				<div className='accordions'>
+					{accordions.map(accordion => {
+						return <Accordion key={uuid()} accordion={accordion} />;
+					})}
+				</div>
+			)}
 		</div>
 	);
 };
