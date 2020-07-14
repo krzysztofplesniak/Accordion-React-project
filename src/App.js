@@ -10,14 +10,15 @@ const App = () => {
 	const [theme, setTheme] = useState('lightTheme');
 	const [loading, setLoading] = useState(true);
 	
-	const port = process.env.PORT || 8080;
+	const port = process.env.PORT || 5000;
 	const env = process.env.NODE_ENV;
+
 	let urlPath = '';
 
 	if (env === 'development') {
 		urlPath = 'http://localhost:3000';
 	}
-	
+
 	const fetchData = async () => {
 		const accordionsList = await axios({
 			method: 'GET',
@@ -40,7 +41,7 @@ const App = () => {
 	return (
 		<div className='container'>
 			<Header theme={theme} onHandlerTheme={onHandlerTheme} />
-				{loading && accordions ? (
+				{loading && accordions.length > 0 ? (
 					<div className='beatLoader'>
 						<BeatLoader size={50} color='red' loading />
 					</div>
