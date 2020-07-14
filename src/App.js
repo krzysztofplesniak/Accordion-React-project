@@ -9,11 +9,19 @@ const App = () => {
 	const [accordions, setAccordions] = useState([]);
 	const [theme, setTheme] = useState('lightTheme');
 	const [loading, setLoading] = useState(true);
+	
+	const port = process.env.PORT || 8080;
+	const env = process.env.NODE_ENV;
+	let urlPath = '';
 
+	if (env === 'development') {
+		urlPath = 'http://localhost:3000';
+	}
+	
 	const fetchData = async () => {
 		const accordionsList = await axios({
 			method: 'GET',
-			url: 'http://localhost:3000/accordions',
+			url: `${urlPath}/accordions`,
 		});
 
 		const json = await accordionsList;
