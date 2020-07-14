@@ -13,7 +13,7 @@
 		"build-dev": "webpack --mode=development",
 		"build-prod": "webpack -p --env production",
 		"dev-server": "webpack-dev-server",
-		"dev": "concurrently \"npm run dev-server\" \"json-server\""
+		"dev": "concurrently \"npm run dev-server\" \"npm run json-server\""
 	},
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
