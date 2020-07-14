@@ -10,13 +10,20 @@ const App = () => {
 	const [theme, setTheme] = useState('lightTheme');
 	const [loading, setLoading] = useState(true);
 
-	// const port = process.env.PORT || 5000;
-	// const env = process.env.NODE_ENV;
+	const port = process.env.PORT || 5000;
+	const env = process.env.NODE_ENV;
 	
 	const fetchData = async () => {
+		
+		let localPath = '';
+
+		if (env ==='development') {
+			localPath = `http://localhost:3000`;
+		}
+		
 		const accordionsList = await axios({
 			method: 'GET',
-			url: 'http://localhost:3000/accordions',
+			url: `${localPath}/accordions`,
 		});
 
 		const json = await accordionsList.data;
