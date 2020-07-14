@@ -9,7 +9,7 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"json-server": "json-server --watch db.json",
+		"json-server": "node json-server --watch db.json",
 		"build-dev": "webpack --mode=development",
 		"build-prod": "webpack -p --env production",
 		"dev-server": "webpack-dev-server",
