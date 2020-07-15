@@ -3,8 +3,8 @@ Jak zastartować projekt:
 # INSTALACJA
    - npm install
    - opcje na uruchomienie w terminalu:
-   - npm dev  => "concurrently \"npm run dev-server\" \"npm run json-server\"",
-   - npm dev  => "concurrently \"node server.js\" \"npm run json-server\"",
+      - npm dev  => "concurrently \"npm run dev-server\" \"npm run json-server\"",
+      - npm dev  => "concurrently \"node server.js\" \"npm run json-server\"",
 
 
 
