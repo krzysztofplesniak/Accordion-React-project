@@ -2,8 +2,19 @@ const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
 
+// JSON-SERVER-HEROKU  -> https://github.com/jesperorb/json-server-heroku
+const jsonServer = require('json-server');
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+
 const port = process.env.PORT || 5000;
 const env = process.env.NODE_ENV;
+
+// JSON-SERVER-HEROKU
+server.use(middlewares);
+server.use(router);
+server.listen(port);
 
 const app = express();
 
