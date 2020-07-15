@@ -7,14 +7,15 @@
 	"author": "krzysztof pleśniak",
 	"license": "ISC",
 	"scripts": {
-		"start": "react-scripts start",
-		"start2": "concurrently \"node server.js\" \"npm run json-server\"",
+		"start": "concurrently \"node server.js\" \"npm run json-server\"",
+		"start2": "react-scripts start",
 		"build": "react-scripts build",
-		"json-server": "json-server --watch db.json",
+		"json-server": "json-server --watch db.json -p 5001",
 		"build-dev": "webpack --mode=development",
 		"build-prod": "webpack -p --env production",
 		"dev-server": "webpack-dev-server",
 		"dev": "concurrently \"npm run dev-server\" \"npm run json-server\"",
+		"dev2": "concurrently \"node server.js\" \"npm run json-server\"",
 		"heroku-postbuild": "npm install && npm run build"
 	},
 	"dependencies": {
