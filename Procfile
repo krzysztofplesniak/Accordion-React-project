@@ -1,1 +1,1 @@
-web: concurrently node server.js npm run json-server
+web: node server.js
