@@ -18,17 +18,19 @@ const App = () => {
 		let localPath = '';
 
 		if (env ==='development') {
-			localPath = `http://localhost:3000`;
-		}
-		
+			localPath = `http://localhost:${port}/accordions`;
+		} else localPath = `/accordions`;
+
 		const accordionsList = await axios({
 			method: 'GET',
-			url: `${localPath}/accordions`,
+			url: 'http://localhost:3000/accordions'
 		});
 
 		const json = await accordionsList.data;
+
 		setAccordions(json);
 		setLoading(false);
+	//	console.log('xzczxcv ',localPath);
 	};
 
 	useEffect(() => {
@@ -43,11 +45,12 @@ const App = () => {
 		<div className='container'>
 			<Header theme={theme} onHandlerTheme={onHandlerTheme} />
 
-			{loading && accordions.length === 0 ? (
+			{(loading && accordions.length === 0) && (
 				<div className='beatLoader'>
 					<BeatLoader size={50} color='red' loading />
 				</div>
-			) : (
+			)}
+			{(!loading && accordions.length > 0) && (
 				<div className='accordions'>
 					{accordions.map(accordion => {
 						return <Accordion key={uuid()} accordion={accordion} />;
