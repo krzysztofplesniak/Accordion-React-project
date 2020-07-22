@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { BeatLoader } from 'react-spinners';
-import Accordion from './components/Accordion';
+import Accordions from './components/Accordions';
 import Header from './components/Header';
 
 const App = () => {
 	const [accordions, setAccordions] = useState([]);
-	const [theme, setTheme] = useState('light-theme');
 	const [loading, setLoading] = useState(true);
+	const [theme, setTheme] = useState('light-theme');
 
-	const defaultPort = 3001;
-	const port = process.env.PORT || defaultPort;
+	const port = process.env.PORT || 3001;
 
 	useEffect(() => {
 		let isUnmount = false;
@@ -37,25 +36,15 @@ const App = () => {
 	return (
 		<div className={theme}>
 			<div className={`app-container ${theme}`}>
-				<>
-					<Header onHandlerTheme={onHandlerTheme} theme={theme}/>
+				<Header onHandlerTheme={onHandlerTheme} theme={theme} />
 
-					{loading && accordions.length === 0 ? (
-						<div className='beatLoader'>
-							<BeatLoader size={50} color='red' loading />
-						</div>
-					) : (
-						<div className='accordions'>
-							{accordions.map(accordion => (
-								<Accordion
-									key={accordion.id}
-									accordion={accordion}
-									theme={theme}
-								/>
-							))}
-						</div>
-					)}
-				</>
+				{loading && accordions.length === 0 ? (
+					<div className='beatLoader'>
+						<BeatLoader size={50} color='red' loading />
+					</div>
+				) : (
+					<Accordions accordions={accordions} theme={theme} />
+				)}
 			</div>
 		</div>
 	);
