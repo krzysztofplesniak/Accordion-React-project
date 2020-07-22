@@ -1,4 +1,4 @@
-.container {
+.app-container {
     box-sizing: border-box;
     background-color: $off-white;
     width: 70%;
@@ -12,6 +12,18 @@
         margin: 0 auto;
         padding: 0 $xs-pm;
     }
+
+    // M = modifier 'accordion--dark-theme'
+	&--dark-theme {
+		background-color: $dark-theme;
+		color: $off-white;
+	}
+
+	// M = modifier 'accordion--light-theme'
+	&--light-theme {
+		background-color: $ligth-theme;
+		color: $black;
+	}
 }
 
 .beatLoader {

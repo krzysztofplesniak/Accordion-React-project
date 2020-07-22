@@ -1,7 +1,7 @@
 import React from 'react';
 import SwitchOnOff from './SwitchOnOff';
 
-const Header = () => {
+const Header = ({ onHandlerTheme }) => {
 	return (
 		<div className='header'>
 			<div>
@@ -11,7 +11,7 @@ const Header = () => {
 				</p>
 			</div>
 			<div className='header__toggle-switch'>
-				<SwitchOnOff />
+				<SwitchOnOff onHandlerTheme={onHandlerTheme}/>
 			</div>
 		</div>
 	);

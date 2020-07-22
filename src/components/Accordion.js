@@ -16,7 +16,7 @@ const Accordion = ({ accordion: { title, subtitle, content } }) => {
 	};
 
 	return (
-		<div className='container container--accordion'>
+		<div className='app-container app-container--accordion'>
 			<div className={`accordion`}>
 				<button className='accordion__button' onClick={onClickHandlerToogle}>
 					<div className='accordion__info'>

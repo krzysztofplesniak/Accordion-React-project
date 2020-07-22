@@ -1,21 +1,21 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 
-const SwitchOnOff = () => {
+const SwitchOnOff = ({ onHandlerTheme }) => {
 	const [isSwitchOn, setIsSwitchOn] = useState(false);
 
 	const onSwitchAction = () => {
 		setIsSwitchOn(!isSwitchOn);
+		onHandlerTheme();
 	};
 
 	return (
 		<Form>
 			<Form.Check
-				height='20px'
-				weight='20px'
 				onChange={onSwitchAction}
 				type='switch'
 				id='custom-switch'
+				//label='On/Off'
 				checked={isSwitchOn}
 			/>
 		</Form>

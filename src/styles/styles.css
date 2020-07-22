@@ -18,7 +18,7 @@ body {
   color: #646464;
 }
 
-.container {
+.app-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ddd;
@@ -28,11 +28,21 @@ body {
   padding: 2rem;
 }
 
-.container--accordion {
+.app-container--accordion {
   width: 80%;
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.app-container--dark-theme {
+  background-color: #070707;
+  color: #ddd;
+}
+
+.app-container--light-theme {
+  background-color: #f4f4f4;
+  color: #202020;
 }
 
 .beatLoader {
@@ -210,16 +220,6 @@ body {
 
 .accordion--open {
   max-height: 100%;
-}
-
-.accordion--dark-theme {
-  background-color: #070707;
-  color: #ddd;
-}
-
-.accordion--light-theme {
-  background-color: #f4f4f4;
-  color: #202020;
 }
 
 @media (max-width: 900px) {

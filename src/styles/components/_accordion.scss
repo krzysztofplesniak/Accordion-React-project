@@ -83,16 +83,4 @@
 	&--open {
 		max-height: 100%;
 	}
-
-	// M = modifier 'accordion--dark-theme'
-	&--dark-theme {
-		background-color: $dark-theme;
-		color: $off-white;
-	}
-
-	// M = modifier 'accordion--light-theme'
-	&--light-theme {
-		background-color: $ligth-theme;
-		color: $black;
-	}
 }
