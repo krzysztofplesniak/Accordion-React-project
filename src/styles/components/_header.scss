@@ -10,7 +10,7 @@
     padding: $s-pm;
     color: $black;
     height: 12vh;
-    border-bottom: 4px solid red;
+    border-bottom: $min-border solid red;
 
     // E = element 'header__title'
     &__title {

@@ -3,6 +3,7 @@
 // B = base 'accordion'
 .accordion {
 	color: $off-white;
+	padding: $min-pm 0;
 
 	// E = element 'accordion__button'
 	&__button {
@@ -10,10 +11,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 5px 0;
+		margin-bottom: $min-pm;
 		padding: $xs-pm;
 		width: 100%;
-		border-radius: 5px;
+		border-radius: $min-pm;
 		border: none;
 		outline: none;
 		transition: background-color 0.2s ease-in-out;
@@ -35,7 +36,7 @@
         font-weight: $m-fw;
 		font-size: $m-fs;
         text-align: left;
-        margin-left: 15px;
+        margin-left: $s-pm;
     }
 
 	// E = element 'accordion__title'
@@ -43,7 +44,7 @@
 		font-weight: $l-fw;
 		font-size: $m-fs;
 		text-transform: uppercase;
-	    margin-bottom: 10px;
+	    margin-bottom: $xs-pm;
 	}
 
 	// E = element 'accordion__subtitle'
@@ -73,9 +74,9 @@
 	&__content {
 		width: 100%;
 		margin: 0 auto;
-		border-left: 4px solid red;
+		border-left: $min-border solid red;
 		background-color: $white;
-		border-radius: 5px;
+		border-radius: $min-pm;
 		overflow: hidden;
 		transition: max-height 0.15s ease-in-out;
 	}

@@ -24,7 +24,7 @@ body {
   background-color: #ddd;
   width: 70%;
   max-width: 70rem;
-  margin: 20px auto;
+  margin: 2rem auto;
   padding: 2rem;
 }
 
@@ -73,7 +73,7 @@ body {
   padding: 1.5rem;
   color: #202020;
   height: 12vh;
-  border-bottom: 4px solid red;
+  border-bottom: 0.4rem solid red;
 }
 
 .header__title {
@@ -136,6 +136,7 @@ body {
 
 .accordion {
   color: #ddd;
+  padding: 0.5rem 0;
 }
 
 .accordion__button {
@@ -149,10 +150,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5px 0;
+  margin-bottom: 0.5rem;
   padding: 1rem;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   -webkit-transition: background-color 0.2s ease-in-out;
@@ -174,14 +175,14 @@ body {
   font-weight: 500;
   font-size: 1.8rem;
   text-align: left;
-  margin-left: 15px;
+  margin-left: 1.5rem;
 }
 
 .accordion--title {
   font-weight: 900;
   font-size: 1.8rem;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .accordion--subtitle {
@@ -210,9 +211,9 @@ body {
 .accordion__content {
   width: 100%;
   margin: 0 auto;
-  border-left: 4px solid red;
+  border-left: 0.4rem solid red;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   overflow: hidden;
   -webkit-transition: max-height 0.15s ease-in-out;
   transition: max-height 0.15s ease-in-out;
@@ -226,7 +227,7 @@ body {
   .container {
     width: 85%;
     max-width: 50rem;
-    margin: 10px auto;
+    margin: 1rem auto;
     padding: 1rem;
   }
   .container--accordion {
@@ -238,7 +239,7 @@ body {
     padding: 0;
   }
   .accordion__button {
-    padding: 10px 0px;
+    padding: 1rem 0px;
   }
   .accordion__info-text {
     font-size: 1.2rem;
@@ -257,7 +258,7 @@ body {
   }
   .container--accordion {
     width: 95%;
-    padding: 0 5px;
+    padding: 0 0.5rem;
   }
   .header {
     margin: 1rem;

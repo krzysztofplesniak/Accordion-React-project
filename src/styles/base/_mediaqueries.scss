@@ -2,7 +2,7 @@
     .container {
         width: 85%;
         max-width: 50rem;
-        margin: 10px auto;
+        margin: $xs-pm auto;
         padding: $xs-pm;
 
         &--accordion {
@@ -18,7 +18,7 @@
         }
 
         &__button {
-            padding: 10px 0px;
+            padding: $xs-pm 0px;
         }
         &__info-text {
             font-size: $xs-fs;
@@ -38,7 +38,7 @@
 
         &--accordion {
             width: 95%;
-            padding: 0 5px;
+            padding: 0 $min-pm;
         }
     }
 

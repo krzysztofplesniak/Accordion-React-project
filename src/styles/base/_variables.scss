@@ -20,7 +20,11 @@ $dark-theme: $background-color2;
 // Fonts stack
 $font-stack: 'Helvetica', 'Roboto', 'Arial', sans-serif;
 
+// Border 
+$min-border: 0.4rem; 
+
 // Padding & Margin 
+$min-pm: 0.5rem; 
 $xs-pm: 1rem;
 $s-pm: 1.5rem;
 $m-pm: 2rem;
