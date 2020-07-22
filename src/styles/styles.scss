@@ -1,28 +1,33 @@
+// Explanation how is settuping custom-switch coming from 'node_modules\bootstrap\scss\_variables.scss'
+
 // $border-width:                1px !default;
 // $input-btn-border-width:      $border-width !default;
 // $input-border-width:                    $input-btn-border-width !default;
 // $custom-control-indicator-border-width: $input-border-width !default;
 // $custom-control-indicator-size:         1rem !default;
 
+
+// Explanation hwo is settuping custom-switch coming from 'node_modules\bootstrap\scss\_custom-forms.scss' 
+
 // $custom-switch-width:                           $custom-control-indicator-size * 1.75 !default;
 // $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
 // $custom-switch-indicator-size:                  subtract($custom-control-indicator-size, $custom-control-indicator-border-width * 4) !default;
 // transform: translateX($custom-switch-width - $custom-control-indicator-size);
 
-
-
 // input
-$custom-control-indicator-border-width: 0.1rem; 
-$custom-control-indicator-size: 3rem;
+$custom-control-indicator-border-width: 0.1rem; // 1px
+$custom-control-indicator-size: 3rem; // 30px
 
-// koło czyli after
-$custom-switch-indicator-size: $custom-control-indicator-size - 4 * $custom-control-indicator-border-width;
+// after => circle
+$custom-switch-indicator-size: $custom-control-indicator-size - 4 * $custom-control-indicator-border-width; // 26px
 
-// promień
-$custom-switch-indicator-border-radius: $custom-control-indicator-size / 2;
+// border radius 
+$custom-switch-indicator-border-radius: $custom-control-indicator-size / 2 + 0.1rem; // 10px
+// explanation why above is correction + 0.1rem 
+// because in _custom_forms.scss from bootstrap package (line 187) is calculated very precisely => top: add(($font-size-base * $line-height-base - $custom-control-indicator-size) / 2, $custom-control-indicator-border-width * 2);
 
-// obwiednia czyli before
-$custom-switch-width: $custom-control-indicator-size * 1.75;
+// before => circle background, ellipse behind the cicrcle SwitchOnOff, which is wider than higher
+$custom-switch-width: $custom-control-indicator-size * 1.75; // 35px
 
 
 //@import "Bootstrap";

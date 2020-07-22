@@ -643,7 +643,7 @@ textarea.form-control {
   left: -5.75rem;
   width: 5.25rem;
   pointer-events: all;
-  border-radius: 1.5rem;
+  border-radius: 1.6rem;
 }
 
 .custom-switch .custom-control-label::after {
@@ -652,7 +652,7 @@ textarea.form-control {
   width: 2.6rem;
   height: 2.6rem;
   background-color: #adb5bd;
-  border-radius: 1.5rem;
+  border-radius: 1.6rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -1017,6 +1017,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.6;
   color: #646464;
+  background-color: #e6e6e6;
 }
 
 .app-container {
@@ -1037,12 +1038,12 @@ body {
 }
 
 .app-container--dark-theme {
-  background-color: #070707;
+  background-color: #555;
   color: #ddd;
 }
 
 .app-container--light-theme {
-  background-color: #f4f4f4;
+  background-color: #eee;
   color: #202020;
 }
 
@@ -1069,7 +1070,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #f4f4f4;
+  background: #eee;
   margin: 1.5rem;
   padding: 1.5rem;
   color: #202020;
