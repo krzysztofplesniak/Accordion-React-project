@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
 
 const SwitchOnOff = ({ onHandlerTheme }) => {
 	const [isSwitchOn, setIsSwitchOn] = useState(false);

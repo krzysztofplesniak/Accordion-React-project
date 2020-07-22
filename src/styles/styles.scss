@@ -1,26 +1,47 @@
+// $border-width:                1px !default;
+// $input-btn-border-width:      $border-width !default;
+// $input-border-width:                    $input-btn-border-width !default;
+// $custom-control-indicator-border-width: $input-border-width !default;
+// $custom-control-indicator-size:         1rem !default;
+
+// $custom-switch-width:                           $custom-control-indicator-size * 1.75 !default;
+// $custom-switch-indicator-border-radius:         $custom-control-indicator-size / 2 !default;
+// $custom-switch-indicator-size:                  subtract($custom-control-indicator-size, $custom-control-indicator-border-width * 4) !default;
+// transform: translateX($custom-switch-width - $custom-control-indicator-size);
+
+
+
+// input
+$custom-control-indicator-border-width: 0.1rem; 
+$custom-control-indicator-size: 3rem;
+
+// koło czyli after
+$custom-switch-indicator-size: $custom-control-indicator-size - 4 * $custom-control-indicator-border-width;
+
+// promień
+$custom-switch-indicator-border-radius: $custom-control-indicator-size / 2;
+
+// obwiednia czyli before
+$custom-switch-width: $custom-control-indicator-size * 1.75;
+
+
 //@import "Bootstrap";
 // What is needed you can find there => https://getbootstrap.com/docs/4.0/getting-started/theming/
-// @import "../../node_modules/bootstrap/scss/functions";
-// @import "../../node_modules/bootstrap/scss/variables";
-// @import "../../node_modules/bootstrap/scss/mixins";
-// @import "../../node_modules/bootstrap/scss/reboot";
-// @import "../../node_modules/bootstrap/scss/type";
-// @import "../../node_modules/bootstrap/scss/images";
-// @import "../../node_modules/bootstrap/scss/code";
-// @import "../../node_modules/bootstrap/scss/grid";
-// @import "../../node_modules/bootstrap/scss/forms";
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/forms';
+// in this files is class custom-switch
+@import '../../node_modules/bootstrap/scss/custom-forms';
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-
-// Boilerplates & settings 
-@import "./base/variables";
-@import "./base/base";
-@import "./base/container";
+// Boilerplates & settings
+@import './base/variables';
+@import './base/base';
+@import './base/container';
 
 // REACT Components
-@import "./components/header";
-@import "./components/buttons";
-@import "./components/accordion";
-@import "./components/switchonoff";
-@import "./base/mediaqueries";
+@import './components/header';
+@import './components/buttons';
+@import './components/accordion';
+@import './components/switchonoff';
+@import './base/mediaqueries';
