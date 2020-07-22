@@ -1024,7 +1024,7 @@ body {
 }
 
 .dark-theme {
-  background-color: #777;
+  background-color: #888;
 }
 
 .app-container {
@@ -1037,7 +1037,7 @@ body {
 }
 
 .app-container.dark-theme {
-  background-color: #6a6a6a;
+  background-color: #7b7b7b;
   color: #ddd;
 }
 
@@ -1056,7 +1056,7 @@ body {
 }
 
 .accordion-container.dark-theme {
-  background-color: #5e5e5e;
+  background-color: #6f6f6f;
   color: #ddd;
 }
 
@@ -1100,7 +1100,7 @@ body {
 }
 
 .header.dark-theme {
-  background-color: #9d9d9d;
+  background-color: #aeaeae;
 }
 
 .header__title {
@@ -1196,7 +1196,7 @@ body {
 }
 
 .accordion__button.dark-theme {
-  background-color: #9d9d9d;
+  background-color: #aeaeae;
 }
 
 .accordion__info {

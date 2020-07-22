@@ -1,6 +1,6 @@
 // Base colors
-$background-color: #eee;
-$background-color2: #777;
+$background-color-light: #eee;
+$background-color-dark: #888;
 $white: #fff;
 $off-white: #ddd;
 $black: #202020;
@@ -14,8 +14,8 @@ $dark-blue: #364051;
 $green: #23ce39;
 
 // Theme dark/light mode
-$ligth-theme: $background-color;
-$dark-theme: $background-color2;
+$light-theme: $background-color-light;
+$dark-theme: $background-color-dark;
 
 // Fonts stack
 $font-stack: 'Helvetica', 'Roboto', 'Arial', sans-serif;
