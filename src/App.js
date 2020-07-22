@@ -35,10 +35,10 @@ const App = () => {
 	};
 
 	return (
-		<div className={`${theme}`}>
-			<div className={`app-container app-container--${theme}`}>
+		<div className={theme}>
+			<div className={`app-container ${theme}`}>
 				<>
-					<Header onHandlerTheme={onHandlerTheme} />
+					<Header onHandlerTheme={onHandlerTheme} theme={theme}/>
 
 					{loading && accordions.length === 0 ? (
 						<div className='beatLoader'>

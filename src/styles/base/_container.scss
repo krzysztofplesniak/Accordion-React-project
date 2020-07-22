@@ -1,29 +1,38 @@
 .app-container {
     box-sizing: border-box;
-    background-color: $off-white;
     width: 70%;
     max-width: 70rem;
     margin: $m-pm auto;
     padding: $m-pm;
 
-    &--accordion {
-        width: 80%;
-        max-width: 90rem;
-        margin: 0 auto;
-        padding: 0 $xs-pm;
-    }
-
-    // M = modifier 'accordion--dark-theme'
-	&--dark-theme {
+	&.dark-theme {
 		background-color: darken($dark-theme, 5%);
 		color: $off-white;
 	}
 
-	// M = modifier 'accordion--light-theme'
-	&--light-theme {
+
+	&.light-theme {
 		background-color: darken($ligth-theme, 5%);
 		color: $black;
 	}
+}
+
+.accordion-container {
+    box-sizing: border-box;
+    width: 80%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 $xs-pm;
+
+    &.dark-theme {
+        background-color: darken($dark-theme, 10%);
+        color: $off-white;
+    }
+
+    &.light-theme {
+        background-color: darken($ligth-theme, 10%);
+        color: $black;
+    }
 }
 
 .beatLoader {

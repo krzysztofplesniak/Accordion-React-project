@@ -1,9 +1,9 @@
 import React from 'react';
 import SwitchOnOff from './SwitchOnOff';
 
-const Header = ({ onHandlerTheme }) => {
+const Header = ({ onHandlerTheme, theme }) => {
 	return (
-		<div className='header'>
+		<div className={`header ${theme}`}>
 			<div>
 				<p className='header__title'>Accordion component</p>
 				<p className='header__subtitle'>

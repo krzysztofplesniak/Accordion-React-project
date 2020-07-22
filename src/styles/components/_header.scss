@@ -5,12 +5,19 @@
     display: flex;
     justify-content: space-around; 
     align-items: center;
-    background: $background-color;
     margin: $s-pm; 
     padding: $s-pm;
     color: $black;
     height: 12vh;
     border-bottom: $min-border solid red;
+
+    &.light-theme {
+        background-color: $ligth-theme;
+    }
+    
+    &.dark-theme {
+        background-color: lighten($dark-theme, 15%);
+    }
 
     // E = element 'header__title'
     &__title {
