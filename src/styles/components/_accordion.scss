@@ -22,6 +22,14 @@
 		&:hover {
 			background-color: darken($off-white, 5%);
 		}
+
+		& .light-theme {
+			//background-color: lighten($ligth-theme, 5%);
+		}
+		
+		& .dark-theme {
+			//background-color: darken($ligth-theme, 2%);
+		}
 	}
 
 	// E = element 'accordion__text'

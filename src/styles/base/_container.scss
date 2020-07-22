@@ -15,13 +15,13 @@
 
     // M = modifier 'accordion--dark-theme'
 	&--dark-theme {
-		background-color: $dark-theme;
+		background-color: darken($dark-theme, 5%);
 		color: $off-white;
 	}
 
 	// M = modifier 'accordion--light-theme'
 	&--light-theme {
-		background-color: $ligth-theme;
+		background-color: darken($ligth-theme, 5%);
 		color: $black;
 	}
 }

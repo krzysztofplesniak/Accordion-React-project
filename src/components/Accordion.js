@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import Chevron from './Chevron';
 
-const Accordion = ({ accordion: { title, subtitle, content } }) => {
+const Accordion = ({ accordion: { title, subtitle, content }, theme }) => {
 	const [openAccordion, setToogle] = useState('');
 	const [contentHeight, setContentHeight] = useState('0px');
 	const contentReference = useRef(null);
@@ -16,9 +16,9 @@ const Accordion = ({ accordion: { title, subtitle, content } }) => {
 	};
 
 	return (
-		<div className='app-container app-container--accordion'>
+		<div className={`app-container app-container--accordion app-container--${theme}`}>
 			<div className={`accordion`}>
-				<button className='accordion__button' onClick={onClickHandlerToogle}>
+				<button className={`accordion__button ${theme}`} onClick={onClickHandlerToogle}>
 					<div className='accordion__info'>
 						<p className='accordion__info-text accordion--title'>{title}</p>
 						<p className='accordion__info-text accordion--subtitle'>

@@ -18,6 +18,15 @@ body {
     font-size: $m-fs;
     line-height: 1.6;
     color: $dark-grey;
-    background-color: darken($background-color, 3%);
+    
 }
+
+.light-theme {
+    background-color: $ligth-theme;
+}
+
+.dark-theme {
+    background-color: $dark-theme;
+}
+
 

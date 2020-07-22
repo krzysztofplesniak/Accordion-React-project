@@ -10,7 +10,7 @@ const App = () => {
 
 	const defaultPort = 3001;
 	const port = process.env.PORT || defaultPort;
-	
+
 	useEffect(() => {
 		let isUnmount = false;
 		setTimeout(() => {
@@ -34,24 +34,29 @@ const App = () => {
 		setTheme(theme === 'light-theme' ? 'dark-theme' : 'light-theme');
 	};
 
-	
 	return (
-		<div className={`app-container app-container--${theme}`}>
-			<>
-				<Header onHandlerTheme={onHandlerTheme}/>
+		<div className={`${theme}`}>
+			<div className={`app-container app-container--${theme}`}>
+				<>
+					<Header onHandlerTheme={onHandlerTheme} />
 
-				{(loading && accordions.length === 0) ? (
-					<div className='beatLoader'>
-						<BeatLoader size={50} color='red' loading />
-					</div>
-				) : (
-					<div className='accordions'>
-						{accordions.map(accordion => (
-							<Accordion key={accordion.id} accordion={accordion} />
-						))}
-					</div>
-				)}
-			</>
+					{loading && accordions.length === 0 ? (
+						<div className='beatLoader'>
+							<BeatLoader size={50} color='red' loading />
+						</div>
+					) : (
+						<div className='accordions'>
+							{accordions.map(accordion => (
+								<Accordion
+									key={accordion.id}
+									accordion={accordion}
+									theme={theme}
+								/>
+							))}
+						</div>
+					)}
+				</>
+			</div>
 		</div>
 	);
 };
