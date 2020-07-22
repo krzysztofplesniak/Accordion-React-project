@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Form from 'react-bootstrap/Form';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 const SwitchOnOff = () => {
 	const [isSwitchOn, setIsSwitchOn] = useState(false);
@@ -17,7 +16,6 @@ const SwitchOnOff = () => {
 				onChange={onSwitchAction}
 				type='switch'
 				id='custom-switch'
-				//label='On/Off'
 				checked={isSwitchOn}
 			/>
 		</Form>
