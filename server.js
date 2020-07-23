@@ -15,7 +15,7 @@ const env = process.env.NODE_ENV;
 // JSON-SERVER-HEROKU
 server.use(middlewares);
 server.use(router);
-server.listen(port2, (req, res) => {
+server.listen(3001, (req, res) => {
 	res.send(`Server-JSON  listening at http://localhost:${port2}`);
 });
 
@@ -27,6 +27,6 @@ app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
-app.listen(port1, (req, res) => {
+app.listen(3000, (req, res) => {
 	res.send(`Server html listening at http://localhost:${port1}`);
 });
