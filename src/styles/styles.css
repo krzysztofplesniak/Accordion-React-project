@@ -1065,20 +1065,6 @@ body {
   color: #202020;
 }
 
-.beatLoader {
-  border: 0px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 80vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1260,6 +1246,20 @@ body {
 
 .custom-switch .custom-switch {
   padding-left: 1rem;
+}
+
+.beatLoader {
+  border: 0px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 900px) {

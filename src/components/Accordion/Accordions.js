@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import AccordionsList from './AccordionsList';
-import { BeatLoader } from 'react-spinners';
+import Spinner from '../Vendor/Spinner';
 
-const Accordions = ({ theme }) => {
+const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 	const [accordions, setAccordions] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const port = process.env.PORT || 3001;
@@ -28,10 +28,8 @@ const Accordions = ({ theme }) => {
 
 	return (
 		<>
-			{loading && accordions.length === 0 ? (
-				<div className='beatLoader'>
-					<BeatLoader size={50} color='red' loading />
-				</div>
+			{ spinner && loading ? (
+				<Spinner />
 			) : (
 				<AccordionsList accordions={accordions} theme={theme} />
 			)}
