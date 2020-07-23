@@ -5,7 +5,7 @@ import Spinner from '../Vendor/Spinner';
 const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 	const [accordions, setAccordions] = useState([]);
 	const [loading, setLoading] = useState(true);
-	const port = process.env.PORT || 3001;
+	const port = process.env.PORT || 300;
 	
 	useEffect(() => {
 		let isUnmount = false;
@@ -16,7 +16,7 @@ const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 		if (env === 'development') {
 			serverpath = `http://localhost:${port}/accordions`;
 		} else {
-			serverpath = '/accordions';
+			serverpath = `http://localhost:${port}/accordions`;
 		}
 
 		setTimeout(() => {

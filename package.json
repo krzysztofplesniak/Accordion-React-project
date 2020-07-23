@@ -8,8 +8,9 @@
 	"license": "ISC",
 	"scripts": {
 		"start": "concurrently \"node server.js\" \"node server2.js\"",
-		"start3": "PROD=true node server.js",
 		"start2": "react-scripts start",
+		"start3": "node server.js",
+		"start4": "node server2.js",
 		"build": "react-scripts build",
 		"json-server": "json-server --watch db.json -p 3001",
 		"heroku-postbuild": "npm install && npm run build"
