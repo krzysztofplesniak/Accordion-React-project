@@ -5,15 +5,16 @@ import Spinner from '../Vendor/Spinner';
 const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 	const [accordions, setAccordions] = useState([]);
 	const [loading, setLoading] = useState(true);
-	const port = process.env.PORT || 3001;
-
+	
 	useEffect(() => {
+
 		let isUnmount = false;
 		let serverpath = '';
+		const port = process.env.PORT || 3001;
 		const env = process.env.NODE_ENV;
-
-		console.log('Gdzie pyta apka???', env, ' ', port);
 		
+		console.log('PROD / DEV => ', env);
+
 		if (env === 'development') {
 			serverpath = `http://localhost:${port}/accordions`;
 		} else {

@@ -1,5 +1,5 @@
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
 
@@ -14,7 +14,7 @@ module.exports = env => {
 			contentBase: path.join(__dirname, 'public'),
 			compress: true,
 			historyApiFallback: true,
-			port: 5000,
+			port: 3000,
 		},
 		module: {
 			rules: [
