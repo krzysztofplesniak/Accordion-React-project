@@ -11,6 +11,7 @@ const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 		let isUnmount = false;
 		let serverpath = '';
 		const env = process.env.NODE_ENV;
+		
 		console.log('Gdzie pyta apka???', env ,' ',port);
 		if (env === 'development') {
 			serverpath = `http://localhost:${port}/accordions`;
