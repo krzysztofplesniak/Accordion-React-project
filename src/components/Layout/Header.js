@@ -11,7 +11,7 @@ const Header = ({ onHandlerTheme, theme }) => {
 				</p>
 			</div>
 			<div className='header__toggle-switch'>
-				<SwitchOnOff onHandlerTheme={onHandlerTheme} />
+				<SwitchOnOff color='blue' onHandlerTheme={onHandlerTheme} />
 			</div>
 		</div>
 	);

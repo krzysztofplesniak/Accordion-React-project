@@ -13,7 +13,7 @@ const App = () => {
 	return (
 		<Layout theme={theme}>
 			<Header onHandlerTheme={onHandlerTheme} theme={theme} />
-			<Accordions theme={theme} />
+			<Accordions theme={theme} spinner={true}/>
 		</Layout>
 	);
 };

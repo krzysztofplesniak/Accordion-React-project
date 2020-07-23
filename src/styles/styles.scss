@@ -29,7 +29,6 @@ $custom-switch-indicator-border-radius: $custom-control-indicator-size / 2 + 0.1
 // before => circle background, ellipse behind the cicrcle SwitchOnOff, which is wider than higher
 $custom-switch-width: $custom-control-indicator-size * 1.75; // 35px
 
-
 //@import "Bootstrap";
 // What is needed you can find there => https://getbootstrap.com/docs/4.0/getting-started/theming/
 @import '../../node_modules/bootstrap/scss/functions';

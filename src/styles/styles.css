@@ -1248,6 +1248,16 @@ body {
   padding-left: 1rem;
 }
 
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #666;
+  background-color: #666;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: #4d4d4d;
+}
+
 .beatLoader {
   border: 0px solid red;
   display: -webkit-box;
