@@ -9,7 +9,7 @@ const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 const port1 = process.env.PORT || 3000;
-const port2 = process.env.PORT || 3001;
+//const port2 = process.env.PORT || 3001;
 const env = process.env.NODE_ENV;
 
 // JSON-SERVER-HEROKU
@@ -18,18 +18,17 @@ const env = process.env.NODE_ENV;
 // server.listen(port2, () => {
 // 	console.log(`Server-JSON  listening at http://localhost:${port2}`);
 // });
+//app.use(express.json());
 
-const app = express();
-
-app.use(express.json());
-app.get('/ping', (req, res) => res.send('pong'));
 
 //Static folder
-app.use(express.static('build'));
-app.get('*', (req, res) => {
+const app = express();
+app.use(express.static(path.join(__dirname,'build')));
+app.get('/ping', (req, res) => res.send('pong'));
+app.get('/*', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
 app.listen(port1, port1 =>
-	res.send({ msg: `Apka dziala na porcie `, port: port1 })
+	res.send('Apka dziala na porcie')
 );
