@@ -12,7 +12,7 @@ const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 		let serverpath = '';
 		const env = process.env.NODE_ENV;
 		
-		console.log('Gdzie pyta apka???', env ,' ',port);
+		console.log('Gdzie pyta apka??? ', env ,' ',port);
 		if (env === 'development') {
 			serverpath = `http://localhost:${port}/accordions`;
 		} else {
