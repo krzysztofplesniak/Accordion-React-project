@@ -19,13 +19,14 @@ server.listen(port2, (req, res) => {
 	res.send(`Server-JSON  listening at http://localhost:${port2}`);
 });
 
-
 //Static folder
-// const app = express();
-// app.use(express.static(path.join(__dirname, './build')));
-// app.get('/ping', (req, res) => res.send('pong'));
-// app.get('/*', (req, res) => {
-// 	res.sendFile(path.join(__dirname, './build/index.html'));
-// });
+const app = express();
+app.use(express.static(path.join(__dirname, './build')));
+app.get('/ping', (req, res) => res.send('pong'));
+app.get('/*', (req, res) => {
+	res.sendFile(path.join(__dirname, './build/index.html'));
+});
 
-// app.listen(port1);
+app.listen(port1, (req, res) => {
+	res.send(`Server html listening at http://localhost:${port1}`);
+});
