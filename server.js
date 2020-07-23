@@ -12,5 +12,5 @@ app.get('/*', (req, res) => {
 });
 
 app.listen(port, (req, res) => {
-	res.send(`Server HTML listening at http://localhost:${port}`);
+	console.log(`Server HTML listening at http://localhost:${port}`);
 });

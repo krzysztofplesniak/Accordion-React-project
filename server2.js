@@ -10,5 +10,5 @@ const port = process.env.PORT || 3001;
 server.use(middlewares);
 server.use(router);
 server.listen(port, (req, res) => {
-	res.send(`Server-JSON  listening at http://localhost:${port}`);
+	console.log(`Server-JSON  listening at http://localhost:${port}`);
 });
