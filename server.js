@@ -22,10 +22,10 @@ server.listen(port2, () => {
 
 //Static folder
 const app = express();
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, './build')));
 app.get('/ping', (req, res) => res.send('pong'));
 app.get('/*', (req, res) => {
-	res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+	res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
 app.listen(port1);
