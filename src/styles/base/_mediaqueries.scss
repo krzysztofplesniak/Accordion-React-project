@@ -66,9 +66,37 @@
         margin: $xs-pm;
         padding: $xs-pm;
         height: 18vh;
+
+        &__title {
+            font-size: $m-fs;
+        }
+
+        &__subtitle {
+            font-size: $s-fs;
+        }
     }
 
-    .custom-switch {
-        padding-left: 1rem;
+    .accordion {
+        &--title {
+            font-size: $s-fs;
+        }
+
+        &--subtitle {
+            font-size: $xs-fs;
+        }
+
+        &__text {
+            font-size: $xs-fs;
+        }
+    }
+
+    .custom-switch .custom-control-label::before {
+        top: -1rem;
+        left: -3.75rem;
+    }
+
+    .custom-switch .custom-control-label::after {
+        top: -0.8rem;
+        left: -3.55rem;
     }
 }
