@@ -1244,7 +1244,7 @@ body {
   max-height: 100%;
 }
 
-.custom-switch .custom-switch {
+.custom-switch {
   padding-left: 1rem;
 }
 
@@ -1272,14 +1272,14 @@ body {
           align-items: center;
 }
 
-@media (max-width: 900px) {
-  .container {
+@media (min-width: 700px) and (max-width: 900px) {
+  .app-container {
     width: 85%;
     max-width: 50rem;
     margin: 1rem auto;
     padding: 1rem;
   }
-  .container--accordion {
+  .app-container--accordion {
     width: 90%;
     max-width: 50rem;
     padding: 0 1rem;
@@ -1296,23 +1296,43 @@ body {
   .accordion__text {
     font-size: 1.2rem;
   }
+  .custom-switch {
+    padding-left: 2rem;
+  }
 }
 
-@media (max-width: 400px) {
-  .container {
+@media (min-width: 450px) and (max-width: 700px) {
+  .custom-switch {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .app-container {
     width: 100%;
     max-width: 100vh;
     margin: 0px auto;
     padding: 1rem;
   }
-  .container--accordion {
+  .app-container--accordion {
     width: 95%;
+    padding: 0 0.5rem;
+  }
+  .accordion-container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 90%;
+    max-width: 45rem;
+    margin: 0 auto;
     padding: 0 0.5rem;
   }
   .header {
     margin: 1rem;
     padding: 1rem;
     height: 18vh;
+  }
+  .custom-switch {
+    padding-left: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
