@@ -17,7 +17,7 @@ const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 		if (env === 'development') {
 			serverpath = `http://localhost:${port}/accordions`;
 		} else {
-			serverpath = '/accordions';
+			serverpath = 'https://json-server-accordion.herokuapp.com/accordions';
 		}
 
 		setTimeout(() => {
