@@ -15,8 +15,8 @@ const env = process.env.NODE_ENV;
 // JSON-SERVER-HEROKU
 server.use(middlewares);
 server.use(router);
-server.listen(port2, () => {
-	console.log(`Server-JSON  listening at http://localhost:${port2}`);
+server.listen(port2, (req, res) => {
+	res.send(`Server-JSON  listening at http://localhost:${port2}`);
 });
 
 
