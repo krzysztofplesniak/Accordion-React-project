@@ -1,23 +1,7 @@
 const express = require('express');
 const path = require('path');
-const dotenv = require('dotenv');
 
-// JSON-SERVER-HEROKU  -> https://github.com/jesperorb/json-server-heroku
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const router = jsonServer.router('db.json');
-const middlewares = jsonServer.defaults();
-
-const port1 = process.env.PORT || 3000;
-const port2 = process.env.PORT || 3001;
-const env = process.env.NODE_ENV;
-
-// JSON-SERVER-HEROKU
-server.use(middlewares);
-server.use(router);
-server.listen(3001, (req, res) => {
-	res.send(`Server-JSON  listening at http://localhost:${port2}`);
-});
+const port = process.env.PORT || 3000;
 
 //Static folder
 const app = express();
@@ -27,6 +11,6 @@ app.get('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, './build/index.html'));
 });
 
-app.listen(3000, (req, res) => {
-	res.send(`Server html listening at http://localhost:${port1}`);
+app.listen(port, (req, res) => {
+	res.send(`Server HTML listening at http://localhost:${port}`);
 });
