@@ -13,11 +13,11 @@ const port2 = process.env.PORT || 3001;
 const env = process.env.NODE_ENV;
 
 // JSON-SERVER-HEROKU
-server.use(middlewares);
-server.use(router);
-server.listen(port2, () => {
-	console.log(`Server-JSON  listening at http://localhost:${port2}`);
-});
+// server.use(middlewares);
+// server.use(router);
+// server.listen(port2, () => {
+// 	console.log(`Server-JSON  listening at http://localhost:${port2}`);
+// });
 
 
 //Static folder
