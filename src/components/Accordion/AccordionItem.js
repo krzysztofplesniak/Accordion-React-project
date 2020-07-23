@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import Chevron from './Chevron';
+import Chevron from '../Vendor/Chevron';
 
 const AccordionItem = ({ accordion: { title, subtitle, content }, theme }) => {
 	const [openAccordion, setToogle] = useState('');

@@ -1,7 +1,7 @@
 import React from 'react';
-import  AccordionItem  from './AccordionItem';
+import AccordionItem from './AccordionItem';
 
-const Accordions = ({ accordions, theme }) => {
+const AccordionsList = ({ accordions, theme }) => {
 	return (
 		<div className='accordions'>
 			{accordions.map(accordion => (
@@ -11,4 +11,4 @@ const Accordions = ({ accordions, theme }) => {
 	);
 };
 
-export default Accordions;
+export default AccordionsList;
