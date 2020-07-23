@@ -8,13 +8,15 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 const env = process.env.NODE_ENV;
 
 // JSON-SERVER-HEROKU
 server.use(middlewares);
 server.use(router);
-server.listen(port);
+server.listen(port, () => {
+	console.log(`Backend listening at http://localhost:${port}`);
+});
 
 const app = express();
 
@@ -27,6 +29,6 @@ app.get('*', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
 });
 
-app.listen(port, () =>
-	console.log(`Backend listening at http://localhost:${port}`)
-);
+// app.listen(port, () =>
+// 	console.log(`Backend listening at http://localhost:${port}`)
+// );

@@ -6,11 +6,20 @@ const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 	const [accordions, setAccordions] = useState([]);
 	const [loading, setLoading] = useState(true);
 	const port = process.env.PORT || 3001;
-
+	
 	useEffect(() => {
 		let isUnmount = false;
+		let serverpath = '';
+		const env = process.env.NODE_ENV;
+
+		if (env === 'development') {
+			serverpath = `http://localhost:${port}/accordions`;
+		} else {
+			serverpath = '/accordions';
+		}
+
 		setTimeout(() => {
-			fetch(`http://localhost:${port}/accordions`)
+			fetch(serverpath)
 				.then(res => res.json())
 				.then(res => {
 					if (!isUnmount) {
@@ -28,7 +37,7 @@ const Accordions = ({ theme = 'light-theme', spinner = false }) => {
 
 	return (
 		<>
-			{ spinner && loading ? (
+			{spinner && loading ? (
 				<Spinner />
 			) : (
 				<AccordionsList accordions={accordions} theme={theme} />
